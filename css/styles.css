@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper,
+main {
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+header {
+  min-width: 100%;
+}
+
+header,
+footer {
+  color: #fff;
+}
+
+header .title {
+  font-family: sans-serif;
+  /* I gave this title absolute so it can be on top of the SVG */
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 54px;
+}
+
+main .heading {
+  color: #096d79;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main {
+  padding: 0 224px;
+  font-weight: lighter;
+  min-height: 50vh;
+}
+
+footer {
+  background-color: #001d24;
+  height: 150px;
+}
+
+footer p {
+  position: relative;
+  top: 35%;
+  padding: 24px;
+  text-align: center;
+}
+
+.content:nth-child(even) {
+  text-align: end;
+}
+
+@media only screen and (max-width: 480px) {
+  header .title {
+    font-size: 30px;
+    top: 20px;
+    left: 35%;
+  }
+
+  .wrapper {
+    background-color: lightcoral;
+  }
+
+  main {
+    padding: 60px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  header .title {
+    font-size: 50px;
+    top: 7%;
+    left: 34%;
+  }
+  .wrapper {
+    background-color: lightblue;
+  }
+
+  main {
+    padding: 80px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    background-color: lightsteelblue;
+  }
+}
